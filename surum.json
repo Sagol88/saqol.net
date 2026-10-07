@@ -1,0 +1,91 @@
+{
+  "version": "7.4",
+  "date": "2026-10-07",
+  "downloads": {
+    "mac": {
+      "url": "",
+      "label": "Mac için indir",
+      "meta": ".zip · Apple Silicon + Intel"
+    },
+    "windows": {
+      "url": "",
+      "label": "Windows için indir",
+      "meta": ".zip · 64 bit"
+    },
+    "android": {
+      "url": "",
+      "label": "Google Play'den indir",
+      "meta": "Google Play"
+    },
+    "ios": {
+      "url": "",
+      "label": "App Store'dan indir",
+      "meta": "App Store"
+    }
+  },
+  "releases": [
+    {
+      "v": "7.4",
+      "date": "2026-10-07",
+      "title": "Kaldığınız yerden devam",
+      "notes": [
+        "Uygulama kapatıp açtığınızda <b>son baktığınız hesap, klasör ve mail</b> açılır.",
+        "Telefonda üst çubuk yenilendi: daha sade, her ekrana tam sığar.",
+        "Gece / gündüz modu artık <b>Ayarlar</b> içinde."
+      ]
+    },
+    {
+      "v": "7.3",
+      "date": "2026-10-06",
+      "title": "Görünüm ayarı",
+      "notes": [
+        "Otomatik, Gündüz ve Gece modu seçimi.",
+        "Gece modunda okunabilirlik düzeltmeleri."
+      ]
+    },
+    {
+      "v": "7.2",
+      "date": "2026-10-04",
+      "title": "Telefon ekranı iyileştirmeleri",
+      "notes": [
+        "Başlık tüm iPhone ve Android ekranlarına sığar.",
+        "Yazı kutusuna dokununca sayfa büyümez."
+      ]
+    },
+    {
+      "v": "7.0",
+      "date": "2026-10-04",
+      "title": "Teklif Şablonları Arşivi",
+      "notes": [
+        "14 sektöre hazır teklif şablonu: lojistik, inşaat, gıda, tekstil ve daha fazlası.",
+        "Kendi teklif şablonunuzu oluşturun; liste kullanım sıklığına göre sıralanır."
+      ]
+    },
+    {
+      "v": "6.9",
+      "date": "2026-10-04",
+      "title": "Firma profili",
+      "notes": [
+        "Tanıtım maillerinde firmanızın web sitesi, telefonu ve WhatsApp teklif butonu.",
+        "Müşteri tek dokunuşla hazır mesajla size yazar."
+      ]
+    },
+    {
+      "v": "6.7",
+      "date": "2026-10-04",
+      "title": "Daha kararlı, her cihazda",
+      "notes": [
+        "Telefonda arka plandan dönünce bağlantı kendiliğinden toparlanır.",
+        "Intel işlemcili Mac desteği; Windows'ta ikinci açılış çalışan gönderimi durdurmaz."
+      ]
+    },
+    {
+      "v": "6.4",
+      "date": "2026-10-04",
+      "title": "Kartvizitli imza",
+      "notes": [
+        "İmzanıza dokunan kişi kartvizitinizi görür: arar, WhatsApp'tan yazar, rehbere kaydeder."
+      ]
+    }
+  ]
+}
