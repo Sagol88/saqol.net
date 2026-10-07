@@ -217,6 +217,14 @@ footer a{color:var(--on-navy-mut)}
 .rel-item summary time{color:var(--muted);font-size:14px;font-weight:500}
 .rel-item ul{padding-bottom:16px}
 @media (max-width:700px){.rel-latest{grid-template-columns:minmax(0,1fr)}}
+.rel-feats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:8px}
+.rel-feat{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.rel-feat .fi{flex:none;width:38px;height:38px;border-radius:11px;background:var(--blue-soft);display:grid;place-items:center}
+.rel-feat .fi svg{width:20px;height:20px;fill:none;stroke:var(--blue);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.rel-feat b{display:block;font-size:15.5px;color:var(--ink);margin-bottom:3px}
+.rel-feat span{display:block;color:var(--muted);font-size:14.5px;line-height:1.5}
+.rel-list:empty{display:none}
+@media (max-width:700px){.rel-feats{grid-template-columns:minmax(0,1fr)}.rel-badge b{font-size:38px}}
 </style>
 
 <header class="nav">
@@ -398,8 +406,8 @@ footer a{color:var(--on-navy-mut)}
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow">Yenilikler</span>
-        <h2>Son güncellemeler</h2>
-        <p class="lead">SAQOL her hafta gelişiyor. Yeni sürüm tüm platformlara aynı anda gelir.</p>
+        <h2>SAQOL 1.0.0 ile neler yapabilirsiniz</h2>
+        <p class="lead">İlk resmi sürüm yayında. Mac, Windows, Android ve iPhone'da aynı özellikler; yeni sürümler tüm platformlara aynı anda gelir.</p>
       </div>
       <div class="rel-latest" id="relLatest"></div>
       <div class="rel-list" id="relList"></div>
@@ -494,27 +502,86 @@ footer a{color:var(--on-navy-mut)}
 // ---- İndir + Yenilikler: surum.json'dan (yoksa aşağıdaki varsayılan) ----
 (function(){
   var DEF = {
-    "version":"7.4","date":"2026-10-07",
-    "downloads":{
-      "mac":{"url":"","label":"Mac için indir","meta":".zip · Apple Silicon + Intel"},
-      "windows":{"url":"","label":"Windows için indir","meta":".zip · 64 bit"},
-      "android":{"url":"","label":"Google Play'den indir","meta":"Google Play"},
-      "ios":{"url":"","label":"App Store'dan indir","meta":"App Store"}
+ "version": "1.0.0",
+ "date": "2026-10-07",
+ "downloads": {
+  "mac": {
+   "url": "",
+   "label": "Mac için indir",
+   "meta": ".zip · Apple Silicon + Intel"
+  },
+  "windows": {
+   "url": "",
+   "label": "Windows için indir",
+   "meta": ".zip · 64 bit"
+  },
+  "android": {
+   "url": "",
+   "label": "Android için indir (APK)",
+   "meta": ".apk · doğrudan kurulum"
+  },
+  "ios": {
+   "url": "",
+   "label": "App Store'dan indir",
+   "meta": "App Store"
+  }
+ },
+ "releases": [
+  {
+   "v": "1.0.0",
+   "date": "2026-10-07",
+   "title": "SAQOL yayında",
+   "features": [
+    {
+     "i": "inbox",
+     "t": "Tüm hesaplar tek ekranda",
+     "d": "Gmail, Outlook ve firma mailleriniz bir arada. Mac, Windows, Android ve iPhone'da aynı uygulama."
     },
-    "releases":[
-      {"v":"7.4","date":"2026-10-07","title":"Kaldığınız yerden devam","notes":["Uygulama kapatıp açtığınızda <b>son baktığınız hesap, klasör ve mail</b> açılır.","Telefonda üst çubuk yenilendi: daha sade, her ekrana tam sığar.","Gece / gündüz modu artık <b>Ayarlar</b> içinde."]},
-      {"v":"7.3","date":"2026-10-06","title":"Görünüm ayarı","notes":["Otomatik, Gündüz ve Gece modu seçimi.","Gece modunda okunabilirlik düzeltmeleri."]},
-      {"v":"7.2","date":"2026-10-04","title":"Telefon ekranı iyileştirmeleri","notes":["Başlık tüm iPhone ve Android ekranlarına sığar.","Yazı kutusuna dokununca sayfa büyümez."]},
-      {"v":"7.0","date":"2026-10-04","title":"Teklif Şablonları Arşivi","notes":["14 sektöre hazır teklif şablonu: lojistik, inşaat, gıda, tekstil ve daha fazlası.","Kendi teklif şablonunuzu oluşturun; liste kullanım sıklığına göre sıralanır."]},
-      {"v":"6.9","date":"2026-10-04","title":"Firma profili","notes":["Tanıtım maillerinde firmanızın web sitesi, telefonu ve WhatsApp teklif butonu.","Müşteri tek dokunuşla hazır mesajla size yazar."]},
-      {"v":"6.7","date":"2026-10-04","title":"Daha kararlı, her cihazda","notes":["Telefonda arka plandan dönünce bağlantı kendiliğinden toparlanır.","Intel işlemcili Mac desteği; Windows'ta ikinci açılış çalışan gönderimi durdurmaz."]},
-      {"v":"6.4","date":"2026-10-04","title":"Kartvizitli imza","notes":["İmzanıza dokunan kişi kartvizitinizi görür: arar, WhatsApp'tan yazar, rehbere kaydeder."]}
-    ]
-  };
+    {
+     "i": "send",
+     "t": "Toplu tanıtım maili",
+     "d": "Listenizi yükleyin, tek tıkla gönderin. Maillerde firma bilgileriniz ve WhatsApp teklif butonu yer alır."
+    },
+    {
+     "i": "reply",
+     "t": "Dönüş yapanlar listesi",
+     "d": "Tanıtımınıza cevap veren müşteriler tek listede. Tekrar yazdığınızda listeden düşer; tüm cihazlarınızda şifreli eşitlenir."
+    },
+    {
+     "i": "spark",
+     "t": "SAQOL Asistan",
+     "d": "Mail yazma, özetleme ve cevap taslağı. Ek anahtar ya da kurulum gerekmez."
+    },
+    {
+     "i": "doc",
+     "t": "Hazır teklif şablonları",
+     "d": "14 sektöre hazır şablon; kendi şablonunuzu da kaydedin."
+    },
+    {
+     "i": "card",
+     "t": "Kartvizitli imza",
+     "d": "İmzanıza dokunan kişi sizi arar, WhatsApp'tan yazar ya da rehberine kaydeder."
+    },
+    {
+     "i": "pen",
+     "t": "Sade yazma ekranı",
+     "d": "Alıcılar isimleriyle görünür; virgül ve işaretlerle uğraşmazsınız. Maildeki bağlantılar tek dokunuşla açılır."
+    },
+    {
+     "i": "lock",
+     "t": "Gizlilik ve güvenlik",
+     "d": "PIN kilidi, uzak resim engelleme ve gece / gündüz modu."
+    }
+   ]
+  }
+ ]
+};
   var AY=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
   function tarih(d){ var p=(d||'').split('-'); return p.length===3 ? (+p[2])+' '+AY[+p[1]-1]+' '+p[0] : d; }
   function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
   function notes(a){ return '<ul>'+(a||[]).map(function(n){ return '<li>'+n+'</li>'; }).join('')+'</ul>'; }
+  var FI={inbox:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',send:'<path d="M3 11l14-6v14L3 13z"/><path d="M17 9a3 3 0 0 1 0 6"/>',reply:'<path d="M9 14L4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 6 6v4"/>',spark:'<path d="M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4z"/>',doc:'<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/>',card:'<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-1.5 1.7-2 3-2s2.4.5 3 2M15 10h3M15 13h3"/>',pen:'<path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>',lock:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>'};
+  function feats(a){ return '<div class="rel-feats">'+(a||[]).map(function(f){ return '<div class="rel-feat"><div class="fi"><svg viewBox="0 0 24 24" aria-hidden="true">'+(FI[f.i]||FI.spark)+'</svg></div><div><b>'+esc(f.t)+'</b><span>'+esc(f.d)+'</span></div></div>'; }).join('')+'</div>'; }
   function render(D){
     var dl=D.downloads||{};
     document.querySelectorAll('.dl-btn').forEach(function(b){
@@ -525,7 +592,7 @@ footer a{color:var(--on-navy-mut)}
     });
     var hv=document.getElementById('heroVer'); if(hv) hv.textContent='Son sürüm v'+D.version;
     var r=D.releases||[], L=r[0];
-    if(L) document.getElementById('relLatest').innerHTML='<div class="rel-badge"><span class="tag">Son sürüm</span><b>v'+esc(L.v)+'</b><time datetime="'+esc(L.date)+'">'+tarih(L.date)+'</time></div><div><h3>'+esc(L.title)+'</h3>'+notes(L.notes)+'</div>';
+    if(L) document.getElementById('relLatest').innerHTML='<div class="rel-badge"><span class="tag">Yeni</span><b>v'+esc(L.v)+'</b><time datetime="'+esc(L.date)+'">'+tarih(L.date)+'</time></div><div><h3>'+esc(L.title)+'</h3>'+(L.features?feats(L.features):notes(L.notes))+'</div>';
     document.getElementById('relList').innerHTML=r.slice(1).map(function(x){ return '<details class="rel-item"><summary><span class="v">v'+esc(x.v)+'</span><span class="t">'+esc(x.title)+'</span><time datetime="'+esc(x.date)+'">'+tarih(x.date)+'</time></summary>'+notes(x.notes)+'</details>'; }).join('');
     // ziyaretçinin cihazını öne çıkar
     var ua=navigator.userAgent, os=/iPhone|iPad|iPod/.test(ua)?'ios':/Android/.test(ua)?'android':/Mac/.test(ua)?'mac':/Win/.test(ua)?'win':'';
