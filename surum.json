@@ -8,14 +8,16 @@
       "meta": ".zip · Apple Silicon + Intel"
     },
     "windows": {
-      "url": "",
+      "url": "/indir/SAQOL-Windows.zip",
       "label": "Windows için indir",
-      "meta": ".zip · 64 bit"
+      "meta": ".zip · 64 bit",
+      "size": "9 MB"
     },
     "android": {
-      "url": "",
+      "url": "/indir/SAQOL-Android.apk",
       "label": "Android için indir (APK)",
-      "meta": ".apk · doğrudan kurulum"
+      "meta": ".apk · doğrudan kurulum",
+      "size": "5 MB"
     },
     "ios": {
       "url": "",
