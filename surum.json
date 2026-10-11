@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "date": "2026-10-07",
+  "date": "2026-10-11",
   "downloads": {
     "mac": {
       "url": "",
@@ -11,13 +11,13 @@
       "url": "/indir/SAQOL-Windows.zip",
       "label": "Windows için indir",
       "meta": ".zip · 64 bit",
-      "size": "9 MB"
+      "size": "10 MB"
     },
     "android": {
       "url": "/indir/SAQOL-Android.apk",
       "label": "Android için indir (APK)",
       "meta": ".apk · doğrudan kurulum",
-      "size": "5 MB"
+      "size": "6 MB"
     },
     "ios": {
       "url": "",
@@ -28,7 +28,7 @@
   "releases": [
     {
       "v": "1.0.0",
-      "date": "2026-10-07",
+      "date": "2026-10-11",
       "title": "SAQOL yayında",
       "features": [
         {
@@ -49,7 +49,12 @@
         {
           "i": "spark",
           "t": "SAQOL Asistan",
-          "d": "Mail yazma, özetleme ve cevap taslağı. Ek anahtar ya da kurulum gerekmez."
+          "d": "Mail yazma, özetleme ve cevap taslağı. Ek anahtar gerekmez; isterseniz ChatGPT, Claude, Gemini ya da DeepSeek hesabınızı bağlayın."
+        },
+        {
+          "i": "spark",
+          "t": "Firmanızı tanıyan asistan",
+          "d": "Firma bilgilerinizi, hizmetlerinizi ve yazım tarzınızı öğrenir; cevaplar sizin üslubunuzla hazırlanır."
         },
         {
           "i": "doc",
@@ -62,6 +67,11 @@
           "d": "İmzanıza dokunan kişi sizi arar, WhatsApp'tan yazar ya da rehberine kaydeder."
         },
         {
+          "i": "inbox",
+          "t": "Kaydırarak hızlı işlem",
+          "d": "Telefonda maili sağa ya da sola kaydırarak arşivleyin, silin veya okundu yapın; yönleri Ayarlar'dan seçin."
+        },
+        {
           "i": "pen",
           "t": "Sade yazma ekranı",
           "d": "Alıcılar isimleriyle görünür; virgül ve işaretlerle uğraşmazsınız. Maildeki bağlantılar tek dokunuşla açılır."
@@ -69,7 +79,7 @@
         {
           "i": "lock",
           "t": "Gizlilik ve güvenlik",
-          "d": "PIN kilidi, uzak resim engelleme ve gece / gündüz modu."
+          "d": "PIN kilidi, uzak resim engelleme ve gece / gündüz modu. Mailleriniz cihazınızda kalır."
         }
       ]
     }
