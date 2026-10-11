@@ -14,8 +14,11 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style id="sqPreCss">#sqPre{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#3D84EB 0%,#2665CA 50%,#1653B9 100%);transition:opacity .5s ease,visibility .5s}#sqPre.off{opacity:0;visibility:hidden}#sqPre .lg{position:relative;width:300px;height:300px;max-width:78vw;max-height:78vw;animation:sqIn .7s ease-out both}#sqPre .lg img{width:100%;height:100%;display:block}#sqPre .lg i{position:absolute;inset:0;-webkit-mask:url(/img/splash-lines.png) center/100% 100% no-repeat;mask:url(/img/splash-lines.png) center/100% 100% no-repeat;background:linear-gradient(115deg,transparent 0%,transparent 34%,rgba(255,236,190,.9) 45%,#fff 50%,rgba(255,236,190,.9) 55%,transparent 66%,transparent 100%) no-repeat;background-size:300% 100%;animation:sqSh 2.4s cubic-bezier(.45,.05,.35,1) infinite}@keyframes sqSh{0%{background-position:120% 0}100%{background-position:-20% 0}}@keyframes sqIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){#sqPre .lg,#sqPre .lg i{animation:none}}</style>
 </head>
 <body>
+<div id="sqPre" aria-hidden="true"><div class="lg"><img src="/img/splash-logo.png" alt=""><i></i></div></div><script>(function(){var t0=Date.now(),p=document.getElementById("sqPre");if(!p)return;function off(){var w=Math.max(0,1600-(Date.now()-t0));setTimeout(function(){p.classList.add("off");setTimeout(function(){p.remove()},600)},w)}if(document.readyState==="complete")off();else window.addEventListener("load",off);setTimeout(function(){p.classList.add("off")},5000)})();</script>
+
 <style>
 /* Layout: koyu lacivert vitrin (hero) + açık zeminli içerik; ekran görüntüleri gerçek uygulamadan. */
 :root{
