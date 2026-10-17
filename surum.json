@@ -3,10 +3,9 @@
   "date": "2026-10-17",
   "downloads": {
     "mac": {
-      "url": "/SAQOL-Mac.zip",
+      "url": "",
       "label": "Mac için indir",
-      "meta": ".zip · Apple Silicon (M1–M4)",
-      "size": "19 MB"
+      "meta": ".zip · Apple Silicon + Intel"
     },
     "windows": {
       "url": "/SAQOL-Windows.zip",
@@ -24,24 +23,18 @@
       "url": "",
       "label": "App Store'dan indir",
       "meta": "App Store"
-    },
-    "mac_intel": {
-      "url": "/SAQOL-Mac-Intel.zip",
-      "label": "Intel Mac için indir",
-      "meta": ".zip · Intel",
-      "size": "19 MB"
     }
   },
   "releases": [
     {
       "v": "1.0.0",
       "date": "2026-10-17",
-      "title": "Mac sürümü, PDF düzenleyici ve blok blok tanıtım editörü",
+      "title": "PDF düzenleyici, kameradan tarama ve blok blok tanıtım editörü",
       "features": [
         {
           "i": "inbox",
-          "t": "Mac sürümü yayında",
-          "d": "SAQOL artık Mac'te de kurulabilir; Apple Silicon ve Intel için ayrı paketler var. Windows ve Android sürümleri de güncellendi."
+          "t": "Windows ve Android güncellendi",
+          "d": "Tüm yeni özellikler Windows ve Android sürümlerinde. Sürüm ve yapı numarası uygulamada görünür."
         },
         {
           "i": "doc",
@@ -150,6 +143,6 @@
       ]
     }
   ],
-  "build": 10040,
+  "build": 10041,
   "play": "https://play.google.com/store/apps/details?id=net.saqol.mail"
 }
