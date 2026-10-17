@@ -1,31 +1,85 @@
 {
   "version": "1.0.0",
-  "date": "2026-10-11",
+  "date": "2026-10-17",
   "downloads": {
     "mac": {
-      "url": "",
+      "url": "/SAQOL-Mac.zip",
       "label": "Mac için indir",
-      "meta": ".zip · Apple Silicon + Intel"
+      "meta": ".zip · Apple Silicon (M1–M4)",
+      "size": "19 MB"
     },
     "windows": {
-      "url": "/indir/SAQOL-Windows.zip",
+      "url": "/SAQOL-Windows.zip",
       "label": "Windows için indir",
       "meta": ".zip · 64 bit",
-      "size": "10 MB"
+      "size": "22 MB"
     },
     "android": {
-      "url": "/indir/SAQOL-Android.apk",
+      "url": "/SAQOL-Android.apk",
       "label": "Android için indir (APK)",
       "meta": ".apk · doğrudan kurulum",
-      "size": "6 MB"
+      "size": "18 MB"
     },
     "ios": {
       "url": "",
       "label": "App Store'dan indir",
       "meta": "App Store"
+    },
+    "mac_intel": {
+      "url": "/SAQOL-Mac-Intel.zip",
+      "label": "Intel Mac için indir",
+      "meta": ".zip · Intel",
+      "size": "19 MB"
     }
   },
   "releases": [
+    {
+      "v": "1.0.0",
+      "date": "2026-10-17",
+      "title": "Mac sürümü, PDF düzenleyici ve blok blok tanıtım editörü",
+      "features": [
+        {
+          "i": "inbox",
+          "t": "Mac sürümü yayında",
+          "d": "SAQOL artık Mac'te de kurulabilir; Apple Silicon ve Intel için ayrı paketler var. Windows ve Android sürümleri de güncellendi."
+        },
+        {
+          "i": "doc",
+          "t": "Güçlü PDF düzenleyici",
+          "d": "PDF'teki yazıyı aynı yazı tipi ve renkle değiştirin; sayfa kesin, kırpın, döndürün, birleştirin ve bölün. Gizlenecek bilgiyi kalıcı olarak karartın."
+        },
+        {
+          "i": "spark",
+          "t": "Türkçe yazı tanıma",
+          "d": "Taranmış belgelerdeki yazıyı internetsiz okur; ğ, ş, ı gibi harfleri doğru tanır. Taranan PDF'lerde arama ve kopyalama yapılabilir."
+        },
+        {
+          "i": "doc",
+          "t": "Kameradan PDF",
+          "d": "Mail yazarken belgeyi telefon ya da bilgisayar kamerasıyla çekin; kenarlar otomatik bulunur, düzeltilir ve PDF olarak eklenir."
+        },
+        {
+          "i": "send",
+          "t": "Blok blok tanıtım editörü",
+          "d": "Başlık, görsel, ürün, buton ve daha fazlasını sürükleyip bırakarak kendi tanıtım mailinizi tasarlayın. Kampanya, ürün, bülten, kutlama ve davet için hazır başlangıçlar var."
+        },
+        {
+          "i": "card",
+          "t": "Her sektöre uygun önizleme",
+          "d": "Tasarım ekranı firmanızın sektörüne göre örnek içerik gösterir; şablonlar her sektörde kullanılabilir."
+        },
+        {
+          "i": "inbox",
+          "t": "Bildirimden doğrudan maile",
+          "d": "Yeni mail bildirimine dokunduğunuzda o mail açılır; Windows, Mac, Android ve iPhone'da."
+        },
+        {
+          "i": "lock",
+          "t": "Yeni sürüm uyarısı",
+          "d": "Yeni sürüm çıkınca uygulama haber verir; tek dokunuşla indirirsiniz. Sürüm ve yapı numarası uygulamada görünür."
+        }
+      ]
+    },
     {
       "v": "1.0.0",
       "date": "2026-10-11",
@@ -81,7 +135,21 @@
           "t": "Gizlilik ve güvenlik",
           "d": "PIN kilidi, uzak resim engelleme ve gece / gündüz modu. Mailleriniz cihazınızda kalır."
         }
+      ],
+      "notes": [
+        "Tüm hesaplar tek ekranda — Gmail, Outlook ve firma mailleriniz bir arada. Mac, Windows, Android ve iPhone'da aynı uygulama.",
+        "Toplu tanıtım maili — Listenizi yükleyin, tek tıkla gönderin. Maillerde firma bilgileriniz ve WhatsApp teklif butonu yer alır.",
+        "Dönüş yapanlar listesi — Tanıtımınıza cevap veren müşteriler tek listede. Tekrar yazdığınızda listeden düşer; tüm cihazlarınızda şifreli eşitlenir.",
+        "SAQOL Asistan — Mail yazma, özetleme ve cevap taslağı. Ek anahtar gerekmez; isterseniz ChatGPT, Claude, Gemini ya da DeepSeek hesabınızı bağlayın.",
+        "Firmanızı tanıyan asistan — Firma bilgilerinizi, hizmetlerinizi ve yazım tarzınızı öğrenir; cevaplar sizin üslubunuzla hazırlanır.",
+        "Hazır teklif şablonları — 14 sektöre hazır şablon; kendi şablonunuzu da kaydedin.",
+        "Kartvizitli imza — İmzanıza dokunan kişi sizi arar, WhatsApp'tan yazar ya da rehberine kaydeder.",
+        "Kaydırarak hızlı işlem — Telefonda maili sağa ya da sola kaydırarak arşivleyin, silin veya okundu yapın; yönleri Ayarlar'dan seçin.",
+        "Sade yazma ekranı — Alıcılar isimleriyle görünür; virgül ve işaretlerle uğraşmazsınız. Maildeki bağlantılar tek dokunuşla açılır.",
+        "Gizlilik ve güvenlik — PIN kilidi, uzak resim engelleme ve gece / gündüz modu. Mailleriniz cihazınızda kalır."
       ]
     }
-  ]
+  ],
+  "build": 10040,
+  "play": "https://play.google.com/store/apps/details?id=net.saqol.mail"
 }
