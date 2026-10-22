@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "date": "2026-10-17",
+  "date": "2026-10-22",
   "downloads": {
     "mac": {
       "url": "",
@@ -11,7 +11,7 @@
       "url": "/SAQOL-Windows.zip",
       "label": "Windows için indir",
       "meta": ".zip · 64 bit",
-      "size": "22 MB"
+      "size": "18 MB"
     },
     "android": {
       "url": "/SAQOL-Android.apk",
@@ -28,49 +28,59 @@
   "releases": [
     {
       "v": "1.0.0",
-      "date": "2026-10-17",
-      "title": "PDF düzenleyici, kameradan tarama ve blok blok tanıtım editörü",
+      "date": "2026-10-22",
+      "title": "Akıllı belge tarama, PDF'te geri al ve doğru konuşma gruplama",
       "features": [
         {
-          "i": "inbox",
-          "t": "Windows ve Android güncellendi",
-          "d": "Tüm yeni özellikler Windows ve Android sürümlerinde. Sürüm ve yapı numarası uygulamada görünür."
+          "i": "doc",
+          "t": "Akıllı belge tarama",
+          "d": "Kamera belgenin kenarlarını ve açısını kendisi bulur; ışık ve netlik için yol gösterir, aynı sayfayı iki kez çekmez. Köşeleri elle de düzeltebilirsiniz."
         },
         {
           "i": "doc",
-          "t": "Güçlü PDF düzenleyici",
-          "d": "PDF'teki yazıyı aynı yazı tipi ve renkle değiştirin; sayfa kesin, kırpın, döndürün, birleştirin ve bölün. Gizlenecek bilgiyi kalıcı olarak karartın."
-        },
-        {
-          "i": "spark",
-          "t": "Türkçe yazı tanıma",
-          "d": "Taranmış belgelerdeki yazıyı internetsiz okur; ğ, ş, ı gibi harfleri doğru tanır. Taranan PDF'lerde arama ve kopyalama yapılabilir."
-        },
-        {
-          "i": "doc",
-          "t": "Kameradan PDF",
-          "d": "Mail yazarken belgeyi telefon ya da bilgisayar kamerasıyla çekin; kenarlar otomatik bulunur, düzeltilir ve PDF olarak eklenir."
-        },
-        {
-          "i": "send",
-          "t": "Blok blok tanıtım editörü",
-          "d": "Başlık, görsel, ürün, buton ve daha fazlasını sürükleyip bırakarak kendi tanıtım mailinizi tasarlayın. Kampanya, ürün, bülten, kutlama ve davet için hazır başlangıçlar var."
-        },
-        {
-          "i": "card",
-          "t": "Her sektöre uygun önizleme",
-          "d": "Tasarım ekranı firmanızın sektörüne göre örnek içerik gösterir; şablonlar her sektörde kullanılabilir."
+          "t": "PDF'te geri al / yeniden yap",
+          "d": "Sayfa silme, döndürme, bölme ve kırpma dahil her adımı geri alın. Sayfa aralığını (ör. 1-3, 5) ayrı PDF olarak kaydedin, istediğiniz sayfaya hemen gidin."
         },
         {
           "i": "inbox",
-          "t": "Bildirimden doğrudan maile",
-          "d": "Yeni mail bildirimine dokunduğunuzda o mail açılır; Windows, Mac, Android ve iPhone'da."
+          "t": "Doğru konuşma gruplama",
+          "d": "Mailler gerçek cevap zincirine göre gruplanır; konusu aynı olan eski yazışmalar yeni konuşmaya karışmaz."
+        },
+        {
+          "i": "pen",
+          "t": "Yazdıklarınız kaybolmaz",
+          "d": "Telefonda geri tuşu ya da bağlantı kopması yazdığınız maili silmez; taslağa kaydedilir veya cihazda saklanır."
+        },
+        {
+          "i": "reply",
+          "t": "Cevaplandı işareti ve doğru klasörler",
+          "d": "Cevapladığınız mailler işaretlenir; gönderilen kopyalar doğru Gönderilmiş klasörüne gider, gizli alıcılar kopyada görünür."
         },
         {
           "i": "lock",
+          "t": "Daha güvenli dosya kaydı",
+          "d": "Aynı adlı ek mevcut dosyanın üzerine yazılmaz; Windows'ta sorun çıkaran dosya adları düzeltilir."
+        },
+        {
+          "i": "spark",
           "t": "Yeni sürüm uyarısı",
-          "d": "Yeni sürüm çıkınca uygulama haber verir; tek dokunuşla indirirsiniz. Sürüm ve yapı numarası uygulamada görünür."
+          "d": "Yeni sürüm çıkınca uygulama haber verir; sürüm ve yapı numarası uygulamada görünür."
         }
+      ]
+    },
+    {
+      "v": "1.0.0",
+      "date": "2026-10-17",
+      "title": "PDF düzenleyici, kameradan tarama ve blok blok tanıtım editörü",
+      "notes": [
+        "Windows ve Android güncellendi — Tüm yeni özellikler Windows ve Android sürümlerinde. Sürüm ve yapı numarası uygulamada görünür.",
+        "Güçlü PDF düzenleyici — PDF'teki yazıyı aynı yazı tipi ve renkle değiştirin; sayfa kesin, kırpın, döndürün, birleştirin ve bölün. Gizlenecek bilgiyi kalıcı olarak karartın.",
+        "Türkçe yazı tanıma — Taranmış belgelerdeki yazıyı internetsiz okur; ğ, ş, ı gibi harfleri doğru tanır. Taranan PDF'lerde arama ve kopyalama yapılabilir.",
+        "Kameradan PDF — Mail yazarken belgeyi telefon ya da bilgisayar kamerasıyla çekin; kenarlar otomatik bulunur, düzeltilir ve PDF olarak eklenir.",
+        "Blok blok tanıtım editörü — Başlık, görsel, ürün, buton ve daha fazlasını sürükleyip bırakarak kendi tanıtım mailinizi tasarlayın. Kampanya, ürün, bülten, kutlama ve davet için hazır başlangıçlar var.",
+        "Her sektöre uygun önizleme — Tasarım ekranı firmanızın sektörüne göre örnek içerik gösterir; şablonlar her sektörde kullanılabilir.",
+        "Bildirimden doğrudan maile — Yeni mail bildirimine dokunduğunuzda o mail açılır; Windows, Mac, Android ve iPhone'da.",
+        "Yeni sürüm uyarısı — Yeni sürüm çıkınca uygulama haber verir; tek dokunuşla indirirsiniz. Sürüm ve yapı numarası uygulamada görünür."
       ]
     },
     {
@@ -143,6 +153,6 @@
       ]
     }
   ],
-  "build": 10043,
+  "build": 10045,
   "play": "https://play.google.com/store/apps/details?id=net.saqol.mail"
 }
