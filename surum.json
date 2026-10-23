@@ -1,23 +1,37 @@
 {
   "version": "1.0.0",
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "downloads": {
     "mac": {
-      "url": "",
+      "url": "/SAQOL-Mac.zip",
       "label": "Mac için indir",
-      "meta": ".zip · Apple Silicon + Intel"
+      "meta": "Apple Silicon (M1–M4)",
+      "size": "23 MB",
+      "note": "Zip'i açın, SAQOL'u Uygulamalar'a sürükleyin. İlk açılışta uyarı çıkarsa: Sistem Ayarları › Gizlilik ve Güvenlik › Yine de Aç.",
+      "alt": {
+        "url": "/SAQOL-Mac-Intel.zip",
+        "label": "Intel işlemcili Mac için indir"
+      }
+    },
+    "mac_intel": {
+      "url": "/SAQOL-Mac-Intel.zip"
     },
     "windows": {
       "url": "/SAQOL-Windows.zip",
       "label": "Windows için indir",
-      "meta": ".zip · 64 bit",
-      "size": "18 MB"
+      "meta": "64 bit",
+      "size": "22 MB",
+      "note": "Zip'teki SAQOL.exe'ye çift tıklayın; kendiliğinden kurulur. Uyarı çıkarsa: Ek bilgi › Yine de çalıştır."
     },
     "android": {
       "url": "/SAQOL-Android.apk",
-      "label": "Android için indir (APK)",
-      "meta": ".apk · doğrudan kurulum",
-      "size": "18 MB"
+      "store": "https://play.google.com/store/apps/details?id=net.saqol.mail",
+      "label": "Google Play'den indir",
+      "meta": "Google Play",
+      "alt": {
+        "url": "/SAQOL-Android.apk",
+        "label": "Play'de göremiyorsanız: doğrudan indir (APK)"
+      }
     },
     "ios": {
       "url": "",
@@ -26,6 +40,63 @@
     }
   },
   "releases": [
+    {
+      "v": "1.0.0",
+      "date": "2026-10-23",
+      "title": "Profesyonel belge tarayıcı, sade konuşmalar ve tüm cihazlarda aynı tanıtım",
+      "features": [
+        {
+          "i": "doc",
+          "t": "Profesyonel belge tarayıcı",
+          "d": "iPhone ve iPad'de Apple'ın kendi belge tarayıcısı açılır: sayfayı kendisi bulur, düzeltir ve çeker. Android ve bilgisayarda yeni kenar bulucu belgeyi koyu, açık ya da desenli zeminde bile çok daha isabetli yakalar."
+        },
+        {
+          "i": "card",
+          "t": "Tanıtım her cihazda aynı",
+          "d": "Tanıtım maili, tasarım, logo, imza, hazır cevaplar ve teklif şablonları; aynı firma mailiyle giriş yapan tüm cihazlarda otomatik görünür. Uçtan uca şifreli."
+        },
+        {
+          "i": "inbox",
+          "t": "Mailler daha hızlı açılır",
+          "d": "Maile dokunmadan önce içerik hazırlanır; son mailler önceden yüklenir, açılış beklemesi kısalır."
+        },
+        {
+          "i": "inbox",
+          "t": "Sade konuşma görünümü",
+          "d": "Cevap zincirindeki eski yazışmalar her mailin altında tekrar etmez; \"•••\" ile katlanır, dokununca açılır."
+        },
+        {
+          "i": "lock",
+          "t": "Android'de geri tuşu düzeldi",
+          "d": "Maillerden geri dönünce açılış logosunda takılma sorunu giderildi."
+        },
+        {
+          "i": "card",
+          "t": "Gönderenin adresi bir dokunuşta",
+          "d": "İsimler sade görünür; isme dokununca e-posta adresi açılır. Tek dokunuşla kopyalayın, WhatsApp'tan paylaşın ya da mail yazın."
+        },
+        {
+          "i": "pen",
+          "t": "Windows'ta kopyala / yapıştır",
+          "d": "Sağ tıkla Kes, Kopyala, Yapıştır ve Tümünü seç her yerde çalışır; mail içeriği ve bağlantılar dahil."
+        },
+        {
+          "i": "spark",
+          "t": "Mac için doğrudan indirme",
+          "d": "Hazır uygulama: zip'i açın, Uygulamalar klasörüne sürükleyin. Apple Silicon ve Intel."
+        },
+        {
+          "i": "inbox",
+          "t": "Her mailin eki kendi yerinde",
+          "d": "Konuşmadaki her mail kendi eklerini gösterir; kapalı maillerde bile dosya adları görünür, tek tıkla açılır."
+        },
+        {
+          "i": "inbox",
+          "t": "Resimli mailler hemen görünür",
+          "d": "Mailin içindeki resimler artık doğrudan yüklenir. İsterseniz Ayarlar'dan \"Sorarak göster\"i seçebilirsiniz."
+        }
+      ]
+    },
     {
       "v": "1.0.0",
       "date": "2026-10-22",
@@ -153,6 +224,6 @@
       ]
     }
   ],
-  "build": 10045,
+  "build": 10051,
   "play": "https://play.google.com/store/apps/details?id=net.saqol.mail"
 }
