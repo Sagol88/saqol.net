@@ -17,7 +17,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
-<style id="sqPreCss">#sqPre{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#FFFFFF 0%,#F1F5FB 55%,#DEE8F6 100%);transition:opacity .5s ease,visibility .5s}#sqPre.off{opacity:0;visibility:hidden}#sqPre .lg{position:relative;width:300px;height:300px;max-width:78vw;max-height:78vw;animation:sqIn .7s ease-out both}#sqPre .lg img{width:100%;height:100%;display:block}#sqPre .lg i{position:absolute;inset:0;-webkit-mask:url(/img/splash-lines.png) center/100% 100% no-repeat;mask:url(/img/splash-lines.png) center/100% 100% no-repeat;background:linear-gradient(115deg,transparent 0%,transparent 34%,rgba(255,236,190,.9) 45%,#fff 50%,rgba(255,236,190,.9) 55%,transparent 66%,transparent 100%) no-repeat;background-size:300% 100%;animation:sqSh 2.4s cubic-bezier(.45,.05,.35,1) infinite}@keyframes sqSh{0%{background-position:120% 0}100%{background-position:-20% 0}}@keyframes sqIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){#sqPre .lg,#sqPre .lg i{animation:none}}</style>
+<style id="sqPreCss">#sqPre{position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#FFFFFF 0%,#F1F5FB 55%,#DEE8F6 100%);transition:opacity .5s ease,visibility .5s}#sqPre.off{opacity:0;visibility:hidden}#sqPre .lg{position:relative;width:300px;height:300px;max-width:78vw;max-height:78vw;animation:sqIn .7s ease-out both}#sqPre .lg img{width:100%;height:100%;display:block}#sqPre .lg i{position:absolute;inset:0;-webkit-mask:url(/img/splash-lines.png) center/100% 100% no-repeat;mask:url(/img/splash-lines.png) center/100% 100% no-repeat;background:linear-gradient(115deg,transparent 0%,transparent 34%,rgba(255,236,190,.9) 45%,#fff 50%,rgba(255,236,190,.9) 55%,transparent 66%,transparent 100%) no-repeat;background-size:300% 100%;animation:sqSh 2.4s cubic-bezier(.45,.05,.35,1) infinite}@keyframes sqSh{0%{background-position:120% 0}100%{background-position:-20% 0}}@keyframes sqIn{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}@media (prefers-reduced-motion:reduce){#sqPre .lg,#sqPre .lg i{animation:none}}.dl-extra{display:grid;gap:6px}.dl-note{margin:0;font-size:13px;line-height:1.45;opacity:.8}.dl-alt{font-size:13.5px;color:#8fb6ff;text-decoration:underline;text-underline-offset:3px}
+</style>
 </head>
 <body>
 <div id="sqPre" aria-hidden="true"><div class="lg"><img src="/img/splash-logo.png" alt=""><i></i></div></div><script>(function(){var t0=Date.now(),p=document.getElementById("sqPre");if(!p)return;function off(){var w=Math.max(0,1600-(Date.now()-t0));setTimeout(function(){p.classList.add("off");setTimeout(function(){p.remove()},600)},w)}if(document.readyState==="complete")off();else window.addEventListener("load",off);setTimeout(function(){p.classList.add("off")},5000)})();</script>
@@ -370,7 +371,7 @@ footer a{color:var(--on-navy-mut)}
         <h2>Üç adımda kullanıma hazır</h2>
       </div>
       <div class="steps">
-        <div class="step"><b>ADIM 1</b><h3>Kurun</h3><p>Windows ya da Android sürümünü aşağıdaki <a href="#indir">İndir</a> bölümünden kurun; sunucu gerekmez. Mac ve iPhone çok yakında.</p></div>
+        <div class="step"><b>ADIM 1</b><h3>Kurun</h3><p>Windows, Mac ya da Android sürümünü aşağıdaki <a href="#indir">İndir</a> bölümünden kurun; sunucu gerekmez. iPhone sürümü App Store onayında.</p></div>
         <div class="step"><b>ADIM 2</b><h3>Hesabınızı ekleyin</h3><p>E-posta adresi ve şifre yeterli. Sunucu ayarları kendiliğinden bulunur.</p></div>
         <div class="step"><b>ADIM 3</b><h3>Firmanızı tanıtın</h3><p>Logo, renkler, hizmetler ve imza. Telefona QR kodla bir kerede aktarılır.</p></div>
       </div>
@@ -382,7 +383,7 @@ footer a{color:var(--on-navy-mut)}
       <div class="sec-head" style="margin-bottom:0">
         <span class="eyebrow" style="color:#8fb6ff">İndir</span>
         <h2>SAQOL'u cihazınıza kurun</h2>
-        <p class="lead">Windows ve Android sürümleri şimdi indirilebilir; Mac ve iPhone çok yakında. Hesaplarınızı bilgisayardan telefona QR kodla tek seferde aktarırsınız.</p>
+        <p class="lead">Windows ve Mac için hemen indirin, Android'de Google Play'den kurun; iPhone sürümü App Store onayında. Hesaplarınızı bilgisayardan telefona QR kodla tek seferde aktarırsınız.</p>
       </div>
       <div class="dl-grid" id="dlGrid">
         <article class="dl" data-os="mac">
@@ -431,7 +432,7 @@ footer a{color:var(--on-navy-mut)}
         <details><summary>Yapay zekâ asistanı nasıl çalışıyor?</summary><p>SAQOL Asistan uygulamayla birlikte hazır gelir; anahtar ya da ek kurulum gerekmez ve günlük ücretsiz kullanım hakkı vardır. Asistana yazdığınız metin (ve isterseniz açık mail) yalnızca cevabı hazırlamak için SAQOL sunucusunda işlenir; saklanmaz, kayda geçmez. Dilerseniz Ayarlar'dan kendi ChatGPT, Claude, Gemini ya da DeepSeek hesabınızı bağlayabilirsiniz. Asistan yalnızca taslak hazırlar; siz onaylamadan hiçbir mail gönderilmez.</p></details>
         <details><summary>Kaç kullanıcı ve hesapla kullanabiliriz?</summary><p>Her kullanıcı istediği kadar mail hesabı ekleyebilir. Firmanızın ihtiyacına göre paket ve kurulum desteğini demo görüşmesinde birlikte belirleriz.</p></details>
         <details><summary>SAQOL ücretli mi?</summary><p>Hayır, temel sürüm ücretsizdir ve istediğiniz kadar mail hesabıyla kullanabilirsiniz. Firma kurulumu ve toplu kullanım için bize yazabilirsiniz.</p></details>
-        <details><summary>Hangi cihazlarda çalışıyor?</summary><p>Windows 10/11 ve Android 7.0 ve üzeri sürümler şimdi indirilebilir. Mac ve iPhone sürümleri çok yakında yayında olacak. Hesaplarınızı bilgisayardan telefona QR kodla tek seferde aktarabilirsiniz.</p></details>
+        <details><summary>Hangi cihazlarda çalışıyor?</summary><p>Windows 10/11, macOS 11 ve üzeri (Apple Silicon ve Intel) ve Android 7.0 ve üzeri sürümler şimdi indirilebilir. iPhone sürümü App Store onayından sonra yayında olacak. Hesaplarınızı bilgisayardan telefona QR kodla tek seferde aktarabilirsiniz.</p></details>
         <details><summary>Tanıtım mailleri spam'e düşer mi?</summary><p>SAQOL gönderimi zamana yayar, hesap başına günlük limit uygular ve her maile "istemiyorum" seçeneği ekler. Bu ayarlar spam riskini belirgin şekilde azaltır.</p></details>
       </div>
     </div>
@@ -515,24 +516,38 @@ footer a{color:var(--on-navy-mut)}
 (function(){
   var DEF = {
  "version": "1.0.0",
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "downloads": {
   "mac": {
-   "url": "",
+   "url": "/SAQOL-Mac.zip",
    "label": "Mac için indir",
-   "meta": ".zip · Apple Silicon + Intel"
+   "meta": "Apple Silicon (M1–M4)",
+   "size": "23 MB",
+   "note": "Zip'i açın, SAQOL'u Uygulamalar'a sürükleyin. İlk açılışta uyarı çıkarsa: Sistem Ayarları › Gizlilik ve Güvenlik › Yine de Aç.",
+   "alt": {
+    "url": "/SAQOL-Mac-Intel.zip",
+    "label": "Intel işlemcili Mac için indir"
+   }
+  },
+  "mac_intel": {
+   "url": "/SAQOL-Mac-Intel.zip"
   },
   "windows": {
    "url": "/SAQOL-Windows.zip",
    "label": "Windows için indir",
-   "meta": ".zip · 64 bit",
-   "size": "18 MB"
+   "meta": "64 bit",
+   "size": "22 MB",
+   "note": "Zip'teki SAQOL.exe'ye çift tıklayın; kendiliğinden kurulur. Uyarı çıkarsa: Ek bilgi › Yine de çalıştır."
   },
   "android": {
    "url": "/SAQOL-Android.apk",
-   "label": "Android için indir (APK)",
-   "meta": ".apk · doğrudan kurulum",
-   "size": "18 MB"
+   "store": "https://play.google.com/store/apps/details?id=net.saqol.mail",
+   "label": "Google Play'den indir",
+   "meta": "Google Play",
+   "alt": {
+    "url": "/SAQOL-Android.apk",
+    "label": "Play'de göremiyorsanız: doğrudan indir (APK)"
+   }
   },
   "ios": {
    "url": "",
@@ -541,6 +556,63 @@ footer a{color:var(--on-navy-mut)}
   }
  },
  "releases": [
+  {
+   "v": "1.0.0",
+   "date": "2026-10-23",
+   "title": "Profesyonel belge tarayıcı, sade konuşmalar ve tüm cihazlarda aynı tanıtım",
+   "features": [
+    {
+     "i": "doc",
+     "t": "Profesyonel belge tarayıcı",
+     "d": "iPhone ve iPad'de Apple'ın kendi belge tarayıcısı açılır: sayfayı kendisi bulur, düzeltir ve çeker. Android ve bilgisayarda yeni kenar bulucu belgeyi koyu, açık ya da desenli zeminde bile çok daha isabetli yakalar."
+    },
+    {
+     "i": "card",
+     "t": "Tanıtım her cihazda aynı",
+     "d": "Tanıtım maili, tasarım, logo, imza, hazır cevaplar ve teklif şablonları; aynı firma mailiyle giriş yapan tüm cihazlarda otomatik görünür. Uçtan uca şifreli."
+    },
+    {
+     "i": "inbox",
+     "t": "Mailler daha hızlı açılır",
+     "d": "Maile dokunmadan önce içerik hazırlanır; son mailler önceden yüklenir, açılış beklemesi kısalır."
+    },
+    {
+     "i": "inbox",
+     "t": "Sade konuşma görünümü",
+     "d": "Cevap zincirindeki eski yazışmalar her mailin altında tekrar etmez; \"•••\" ile katlanır, dokununca açılır."
+    },
+    {
+     "i": "lock",
+     "t": "Android'de geri tuşu düzeldi",
+     "d": "Maillerden geri dönünce açılış logosunda takılma sorunu giderildi."
+    },
+    {
+     "i": "card",
+     "t": "Gönderenin adresi bir dokunuşta",
+     "d": "İsimler sade görünür; isme dokununca e-posta adresi açılır. Tek dokunuşla kopyalayın, WhatsApp'tan paylaşın ya da mail yazın."
+    },
+    {
+     "i": "pen",
+     "t": "Windows'ta kopyala / yapıştır",
+     "d": "Sağ tıkla Kes, Kopyala, Yapıştır ve Tümünü seç her yerde çalışır; mail içeriği ve bağlantılar dahil."
+    },
+    {
+     "i": "spark",
+     "t": "Mac için doğrudan indirme",
+     "d": "Hazır uygulama: zip'i açın, Uygulamalar klasörüne sürükleyin. Apple Silicon ve Intel."
+    },
+    {
+     "i": "inbox",
+     "t": "Her mailin eki kendi yerinde",
+     "d": "Konuşmadaki her mail kendi eklerini gösterir; kapalı maillerde bile dosya adları görünür, tek tıkla açılır."
+    },
+    {
+     "i": "inbox",
+     "t": "Resimli mailler hemen görünür",
+     "d": "Mailin içindeki resimler artık doğrudan yüklenir. İsterseniz Ayarlar'dan \"Sorarak göster\"i seçebilirsiniz."
+    }
+   ]
+  },
   {
    "v": "1.0.0",
    "date": "2026-10-22",
@@ -651,7 +723,7 @@ footer a{color:var(--on-navy-mut)}
     {
      "i": "lock",
      "t": "Gizlilik ve güvenlik",
-     "d": "PIN kilidi, uzak resim engelleme ve gece / gündüz modu. Mailleriniz cihazınızda kalır."
+     "d": "PIN kilidi, isteğe bağlı uzak resim engelleme ve gece / gündüz modu. Mailleriniz cihazınızda kalır."
     }
    ],
    "notes": [
@@ -664,11 +736,11 @@ footer a{color:var(--on-navy-mut)}
     "Kartvizitli imza — İmzanıza dokunan kişi sizi arar, WhatsApp'tan yazar ya da rehberine kaydeder.",
     "Kaydırarak hızlı işlem — Telefonda maili sağa ya da sola kaydırarak arşivleyin, silin veya okundu yapın; yönleri Ayarlar'dan seçin.",
     "Sade yazma ekranı — Alıcılar isimleriyle görünür; virgül ve işaretlerle uğraşmazsınız. Maildeki bağlantılar tek dokunuşla açılır.",
-    "Gizlilik ve güvenlik — PIN kilidi, uzak resim engelleme ve gece / gündüz modu. Mailleriniz cihazınızda kalır."
+    "Gizlilik ve güvenlik — PIN kilidi, isteğe bağlı uzak resim engelleme ve gece / gündüz modu. Mailleriniz cihazınızda kalır."
    ]
   }
  ],
- "build": 10045,
+ "build": 10051,
  "play": "https://play.google.com/store/apps/details?id=net.saqol.mail"
 };
   var AY=['Ocak','Şubat','Mart','Nisan','Mayıs','Haziran','Temmuz','Ağustos','Eylül','Ekim','Kasım','Aralık'];
@@ -681,9 +753,13 @@ footer a{color:var(--on-navy-mut)}
     var dl=D.downloads||{};
     document.querySelectorAll('.dl-btn').forEach(function(b){
       var k=b.getAttribute('data-key'), it=dl[k]||{}, meta=document.querySelector('[data-meta="'+k+'"]');
-      if(it.url){ b.href=it.url; b.textContent=it.label||b.textContent; b.classList.remove('soon'); b.removeAttribute('aria-disabled'); if(/\.(zip|apk|dmg|exe|msi)$/i.test(it.url)) b.setAttribute('download',''); }
+      var main=it.store||it.url;
+      if(main){ b.href=main; b.textContent=it.label||b.textContent; b.classList.remove('soon'); b.removeAttribute('aria-disabled'); if(!it.store&&/\.(zip|apk|dmg|exe|msi)$/i.test(main)) b.setAttribute('download',''); else b.removeAttribute('download'); if(it.store){ b.target='_blank'; b.rel='noopener'; } }
       else { b.removeAttribute('href'); b.textContent='Çok yakında'; b.classList.add('soon'); b.setAttribute('aria-disabled','true'); }
       if(meta) meta.textContent = 'v'+(it.version||D.version)+(it.meta?' · '+it.meta:'')+(it.size?' · '+it.size:'');
+      var card=b.closest('.dl'), ex=card&&card.querySelector('.dl-extra');
+      if(card&&!ex){ ex=document.createElement('div'); ex.className='dl-extra'; card.appendChild(ex); }
+      if(ex){ ex.innerHTML=(it.note&&main?'<p class="dl-note">'+esc(it.note)+'</p>':'')+(it.alt&&it.alt.url&&main?'<a class="dl-alt" href="'+esc(it.alt.url)+'" download>'+esc(it.alt.label)+'</a>':''); }
     });
     var hv=document.getElementById('heroVer'); if(hv) hv.textContent='Son sürüm v'+D.version;
     var r=D.releases||[], L=r[0];
