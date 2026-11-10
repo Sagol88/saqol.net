@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "date": "2026-10-23",
+  "date": "2026-11-10",
   "downloads": {
     "mac": {
       "url": "/SAQOL-Mac.zip",
@@ -31,7 +31,8 @@
       "alt": {
         "url": "/SAQOL-Android.apk",
         "label": "Play'de göremiyorsanız: doğrudan indir (APK)"
-      }
+      },
+      "build": 10053
     },
     "ios": {
       "url": "",
@@ -42,7 +43,34 @@
   "releases": [
     {
       "v": "1.0.0",
-      "date": "2026-10-23",
+      "date": "2026-11-10",
+      "title": "Güvenlik güncellemesi: daha güvenli mail okuma ve ekler",
+      "features": [
+        {
+          "i": "lock",
+          "t": "Daha güvenli mail okuma",
+          "d": "Gelen maillerdeki zararlı kodlar uygulamanın içinde hiçbir koşulda çalışamaz; yanıtlarken ve iletirken de temizlenir."
+        },
+        {
+          "i": "lock",
+          "t": "Tehlikeli eklere karşı koruma",
+          "d": "Program ve betik dosyaları uygulama içinden tek tıkla açılmaz; kaydedilen ekler işletim sisteminin güvenlik kontrolünden geçer. Uzantısı gizlenmiş dosya adları düzeltilir."
+        },
+        {
+          "i": "lock",
+          "t": "Şifreleriniz her zaman şifreli bağlantıdan",
+          "d": "Mail sunucusu şifreli bağlantı sunmazsa şifreniz gönderilmez."
+        },
+        {
+          "i": "inbox",
+          "t": "Veri kaybına karşı ek önlem",
+          "d": "Çöp Kutusu bulunamazsa mail kalıcı silinmez; bozulan ayar dosyası silinmez, yedeklenir. Yarıda kalan tanıtım gönderimi kimseye iki kez gitmez."
+        }
+      ]
+    },
+    {
+      "v": "1.0.0",
+      "date": "2026-10-28",
       "title": "Profesyonel belge tarayıcı, sade konuşmalar ve tüm cihazlarda aynı tanıtım",
       "features": [
         {
@@ -94,6 +122,11 @@
           "i": "inbox",
           "t": "Resimli mailler hemen görünür",
           "d": "Mailin içindeki resimler artık doğrudan yüklenir. İsterseniz Ayarlar'dan \"Sorarak göster\"i seçebilirsiniz."
+        },
+        {
+          "i": "pen",
+          "t": "Rahat yazma penceresi",
+          "d": "Bilgisayarda yeni mail penceresi kayar, sürükleyerek taşınır, köşesinden büyütülür; alta küçültüp diğer maillere bakabilir, sonra kaldığınız yerden devam edebilirsiniz."
         }
       ]
     },
@@ -224,6 +257,6 @@
       ]
     }
   ],
-  "build": 10051,
+  "build": 10054,
   "play": "https://play.google.com/store/apps/details?id=net.saqol.mail"
 }
